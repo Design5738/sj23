@@ -1216,8 +1216,11 @@ input, select, textarea {
 	  #wrapper .intro header p{
 		font-size: 30px;
 		text-transform: capitalize;
-		font-weight: 400;
-		}
+		font-weight: 600;
+		background: -webkit-linear-gradient(rgb(0, 51, 145), rgb(0, 74, 212));
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+	}
 		#wrapper #first header h2, #second header h2{
 			font-size: 25px;
 			color:#ffffff;

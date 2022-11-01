@@ -975,7 +975,10 @@ float: right;
 #wrapper .intro header p{
 	font-size: 30px;
 	text-transform: capitalize;
-	font-weight: 400;
+	font-weight: 600;
+	background: -webkit-linear-gradient(rgb(250, 92, 0), rgb(255, 103, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 #wrapper #first header h2, #second header h2{
 	font-size: 25px;
