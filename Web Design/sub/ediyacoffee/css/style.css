@@ -220,14 +220,13 @@ section{
     line-height: 8rem;
 }
 .carousel-inner .carousel-item p span{
-    font-size: 2rem;
-    font-weight: lighter;
+    /* font-weight: lighter;
     line-height: 1.8;
-    padding:1rem 0;
-    color:rgb(255, 255, 255);
-    font-weight: bold;
+    padding:1rem 0; */
+    color:rgb(255, 255, 255);}
+    /* font-weight: bold;
     margin-bottom: 25rem;
-    padding: 1rem;}
+    padding: 1rem;} */
 .home{
     min-height: 67vh;
     display: flex;
@@ -644,17 +643,6 @@ section{
     .carousel-inner .carousel-item p{
         margin-bottom: 15rem; 
     }
-    .footer .share a {
-        height: 9rem !important;
-        width: 9rem !important;
-        font-size: 4rem !important;
-        line-height: 8.5rem !important;
-        color: rgb(255, 255, 255);
-        border: rgb(255, 255, 255) solid 0.5px;
-        margin-top: 2rem;
-        border-radius: 50%;
-        padding-left: 2.3rem !important;
-    }
     .menu .box-container{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -662,51 +650,36 @@ section{
     }
 }
 @media (max-width:890px){
+    .carousel-inner .carousel-item img {
+        background-size: 100%;
+        height: 400px;
+    }
     html{
         font-size: 30%;
     }
     .carousel-inner .carousel-item p{
-        margin-bottom: 14rem; 
+        margin-bottom: 28rem; 
     }
-    .footer .share a {
-        height: 9rem !important;
-        width: 9rem !important;
-        font-size: 4rem !important;
-        line-height: 8.5rem !important;
-        color: rgb(255, 255, 255);
-        border: rgb(255, 255, 255) solid 0.5px;
-        margin-top: 2rem;
-        border-radius: 50%;
-        padding-left: 2.3rem !important;
     }
     .menu .box-container{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-        gap:16rem;
+        gap:11rem !important;
     }
-}
 @media (max-width:791px){
     html{
         font-size: 25%;
     }
     .carousel-inner .carousel-item p{
-        margin-bottom: 10rem; 
+        margin-bottom: 37rem; 
+        font-size: 2rem;
     }
-    .carousel-inner .carousel-item p{
-        margin-bottom: 18rem; 
+    .carousel-inner .carousel-item h3{
+        margin:0; 
+        line-height: 10rem;
+        font-size: 5rem;
     }
-    .footer .share a {
-        height: 9rem !important;
-        width: 9rem !important;
-        font-size: 4rem !important;
-        line-height: 8.5rem !important;
-        color: rgb(255, 255, 255);
-        border: rgb(255, 255, 255) solid 0.5px;
-        margin-top: 2rem;
-        border-radius: 50%;
-        padding-left: 2.3rem !important;
     }
-}
 
 .header .navbar a{
     margin:0 2rem;
@@ -749,46 +722,31 @@ section{
         justify-content: center;
         text-align: center;
     }
-    .footer .share a {
-        height: 9rem !important;
-        width: 9rem !important;
-        font-size: 4rem !important;
-        line-height: 8.5rem !important;
-        color: rgb(255, 255, 255);
-        border: rgb(255, 255, 255) solid 0.5px;
-        margin-top: 2rem;
-        border-radius: 50%;
-        padding-left: 2.3rem !important;
-    }
-    .menu .box-container{
+        .menu .box-container{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-        gap:14rem;
+        gap:13rem;
     }
 }
 
-@media (max-width:670px){
+@media (max-width:800px){
     .about .row .image img {
         width: 110.3%;
         height: 100%;
         margin-left: -3px;
 }
-.footer .share a {
-    height: 5rem !important;
-    width: 5rem !important;
-    font-size: 2rem !important;
-    line-height: 5rem !important;
-    color: rgb(255, 255, 255);
-    border: rgb(255, 255, 255) solid 0.5px;
-    margin-top: 2rem;
-    border-radius: 50%;
-    padding-left: 1.5rem !important;
+.carousel-inner{
+    width: 100%;
+    margin: 0 auto;
+    height: 386px;
 }
-.menu .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap:10rem;
-}}
+.carousel-inner .carousel-item img{
+    background-size: 100%;
+    height: 400px;
+}
+}
+
+
 @media (max-width:520px){
     html{
         font-size: 50%;
@@ -805,7 +763,27 @@ section{
         color: #fff;
         font-size: 1rem !important;
 }
-
+.carousel-inner .carousel-item p{
+    margin-bottom: 13rem; 
+    font-size: 1.5rem;
+}
+.carousel-inner .carousel-item h3{
+    margin:0; 
+    line-height: 5rem;
+    font-size: 2.5rem;
+}
+.footer .share a {
+    display: inline-block;
+    height: 5rem;
+    width: 5rem;
+    line-height: 4.5rem;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    border: rgb(255, 255, 255) solid 0.3rem;
+    margin: 0.3rem;
+    border-radius: 50%;
+    padding-left: 1.2rem;
+}
 }
 .header .navbar.active {
     height: 250px;
@@ -813,7 +791,6 @@ section{
     right: 0;
     margin: 5px;
     display: block !important;}
-
     .header .navbar a{
         color:var(--black);
         display: block;
@@ -821,7 +798,6 @@ section{
         padding:.5rem;
         font-size: 1.5rem !important;
     }
-
 .about .row .content p {
     font-size: 1.8rem;
     color: rgb(255, 255, 255);
@@ -834,7 +810,16 @@ section{
     padding-top: 4rem;
     line-height: 0.8;
 }
-@media (max-width:450px){
+/* @media (max-width:450px){
+    .carousel-inner .carousel-item p{
+        margin-bottom: 37rem; 
+        font-size: 2rem;
+    }
+    .carousel-inner .carousel-item h3{
+        margin:0; 
+        line-height: 10rem;
+        font-size: 5rem;
+    }
     html{
         font-size: 50%;
     }
@@ -859,22 +844,29 @@ section{
         color: #000000;
         font-size: 1.2rem !important;
         font-weight: 500;
-    }
-    .footer .share a {
-        height: 5rem !important;
-        width: 5rem !important;
-        font-size: 2rem !important;
-        line-height: 5rem !important;
-        color: rgb(255, 255, 255);
-        border: rgb(255, 255, 255) solid 0.5px;
-        margin-top: 2rem;
-        border-radius: 50%;
-        padding-left: 1.5rem !important;
-    }
+    }    
     .footer .container1 .share {
         font-size: 1rem !important;}
         .footer .links a {
             padding: 0 25px 0 0;
             color: #fff;
             font-size: 1rem !important;
-}}
+}
+.carousel-inner .carousel-item p{
+    margin-bottom: 13rem; 
+    font-size: 1rem;
+}
+.carousel-inner .carousel-item h3{
+    margin:0; 
+    line-height: 5rem;
+    font-size: 2.5rem;
+}
+} */
+.carousel-inner .carousel-item .color h3{
+    color: white;
+}
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1rem !important;
+}
